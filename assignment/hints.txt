@@ -1,0 +1,21 @@
+ex1. Don't forget to calculate the TOTAL cost. For example, if the user picks 100 copies, then 
+
+total = 100 * 0.28
+
+(The 100 will be a variable)
+----------------------------------------------
+
+ex3. 
+The user enters the total eggs, but the price is based on number of dozens.
+
+If the user picks 100 eggs, how do you get the number of dozens? Use A combination of division and Math.floor!
+
+There are 8 dozen with 4 leftover eggs. How do you get the REMAINING eggs? Modulus!
+
+100 % 12 = 4 !!
+
+The total price will depend on how many dozens of eggs are bought. In this case, eggs are $0.40 per dozen, so the calculation will be:
+
+total = 8 dozen * 0.40 + 4 leftover * 0.40/12
+
+(the above equation is not javascript, you will have to replace some numbers with variables)
