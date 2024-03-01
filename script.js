@@ -115,37 +115,27 @@
 // }
 
 // Assingment - Excercise 1
-// var numberOfCopies = +prompt("Enter the # of copies to be printed");
-// if (0 > numberOfCopies) {
-//   alert("Can't compute");
-// } else if (numberOfCopies <= 99) {
-//   pricePerCopy = 0.3;
-// } else if (numberOfCopies <= 499) {
-//   pricePerCopy = 0.28;
-// } else if (numberOfCopies <= 749) {
-//   pricePerCopy = 0.27;
-// } else if (numberOfCopies <= 1000) {
-//   pricePerCopy = 0.26;
-// } else if (1000 < numberOfCopies) {
-//   pricePerCopy = 0.25;
-// }
+var numberOfCopies = +prompt("Enter the # of copies to be printed");
+if (0 > numberOfCopies) {
+  alert("Can't compute");
+} else if (numberOfCopies <= 99) {
+  pricePerCopy = 0.3;
+} else if (numberOfCopies <= 499) {
+  pricePerCopy = 0.28;
+} else if (numberOfCopies <= 749) {
+  pricePerCopy = 0.27;
+} else if (numberOfCopies <= 1000) {
+  pricePerCopy = 0.26;
+} else if (1000 < numberOfCopies) {
+  pricePerCopy = 0.25;
+}
 
-// totalCost = pricePerCopy * numberOfCopies;
-// alert(
-//   `Price per copy is: $${pricePerCopy.toFixed(
-//     2
-//   )}\nTotal cost is $${totalCost.toFixed(2)}`
-// );
-
-// Assingment - Excercise 2
-// alert("Enter package dimensions");
-// var Weight = +prompt("Enter weight in kilograms");
-// var Length = +prompt("Enter length in centimeters");
-// var Height = +prompt("Enter height in centimeters");
-// var Width = +prompt("Enter width in centimeters");
-
-// if (Weight > 27) {
-// }
+totalCost = pricePerCopy * numberOfCopies;
+alert(
+  `Price per copy is: $${pricePerCopy.toFixed(
+    2
+  )}\nTotal cost is $${totalCost.toFixed(2)}`
+);
 
 // Assignment - Excercise 3
 var numOfEgg = +prompt("Enter the amount of eggs purchased");
@@ -173,3 +163,35 @@ totalCost = numOfEggDozen * pricePerDozen + priceOfExtras;
 alert(`The total cost is: $${totalCost.toFixed(2)}`);
 
 // Assignment - Excercise 5
+
+var grade = +prompt("Enter a percentage");
+
+if (grade < 60) {
+  alert("The corresponding letter grade is: F");
+} else if (grade < 69) {
+  alert("The corresponding letter grade is: D");
+} else if (grade < 79) {
+  alert("The corresponding letter grade is: C");
+} else if (grade < 89) {
+  alert("The corresponding letter grade is: B");
+} else if (grade < 100) {
+  alert("The corresponding letter grade is: A");
+}
+
+// Assingment - Excercise 2
+alert("Enter package dimensions");
+var Weight = +prompt("Enter weight in kilograms");
+var Length = +prompt("Enter length in centimeters");
+var Height = +prompt("Enter height in centimeters");
+var Width = +prompt("Enter width in centimeters");
+
+// calc of volume
+var packageVolume = Length * Height * Width;
+
+if (Weight > 27 && packageVolume > 100000) {
+  alert("Too heavy and too large");
+} else if (Weight > 27) {
+  alert("Too heavy");
+} else if (packageVolume > 100000) {
+  alert("Too large");
+}
